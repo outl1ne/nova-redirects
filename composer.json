@@ -1,0 +1,43 @@
+{
+    "name": "optimistdigital/nova-redirects",
+    "description": "Redirects manager for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "redirect",
+        "optimistdigital"
+    ],
+    "authors": [
+        {
+            "name": "Mikk Õun",
+            "email": "mikkoun@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Optimist Digital",
+            "email": "info@optimistdigital.com",
+            "role": "Maintainer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OptimistDigital\\NovaRedirects\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OptimistDigital\\NovaRedirects\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
