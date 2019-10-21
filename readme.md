@@ -7,7 +7,7 @@ This [Laravel Nova](https://nova.laravel.com) package allows you to create and m
 Install the package in a Laravel Nova project via Composer:
 
 ```bash
-composer require optimistdigital/nova-page-manager
+composer require optimistdigital/nova-redirects
 ```
 
 Publish the database migration(s) and run migrate:
