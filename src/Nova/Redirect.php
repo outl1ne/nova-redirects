@@ -8,7 +8,8 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
 
-class Redirect extends Resource {
+class Redirect extends Resource
+{
 
     public static $model = 'OptimistDigital\NovaRedirects\Models\Redirect';
 
@@ -34,5 +35,4 @@ class Redirect extends Resource {
             ])->rules('required')->default('302')
         ];
     }
-
 }
