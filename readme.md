@@ -16,3 +16,13 @@ Publish the database migration(s) and run migrate:
 php artisan vendor:publish --provider="OptimistDigital\NovaRedirects\ToolServiceProvider" --tag="migrations"
 php artisan migrate
 ```
+
+If you'd like your application to redirect requests, add the following middleware to `App\Http\Kernel.php`:
+
+```php
+protected $middleware = [
+    // ...
+    \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    \OptimistDigital\NovaRedirects\Http\Middleware\RedirectToIntendedUrl::class,
+];
+```
